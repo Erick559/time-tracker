@@ -8,6 +8,8 @@
     --spacing-m: calc(var(--spacing-sm)*2);
     --spacing-lg: calc(var(--spacing-sm)*3);
     --spacing-xl: calc(var(--spacing-sm)*4);
+    --spacing-xxl: calc(var(--spacing-sm) * 5);
+    --spacing-xxxl: calc(var(--spacing-sm) * 6);
 }
 
 
@@ -16,7 +18,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: "Rubik", "Helvetica Neue",sans-serif;
-    font-size: 18px;
 }
 
 body{
@@ -25,12 +26,46 @@ body{
     justify-content: center;
     padding:var(--spacing-lg);
     background: var(--primary-bg-color);
+    color:hsl(235, 46%, 20%);
+}
+
+.grid-container{
+    display: grid;
+    gap:30px;
 }
 
 .cards{
     width:300px;
-    height:200px;
-    padding:var(--spacing-m);
+    height:120px;
+}
+
+.cards,
+.card-header,
+.time-container{
+    border-radius:10px
+}
+
+.cards.main{
+    height:150px;
+    background:#1D204D;
+}
+
+.card-header {
+    display: flex;
+    background: hsl(246, 80%, 60%);
+    gap:var(--spacing-m);
+    padding:var(--spacing-xxxl);
+}
+
+.text-content{
+    font-size:12px;
+    color:var(--font-pcolor);
+    font-weight: 300;
+}
+
+.text-content .user-name,
+.header p{
+    font-size:18px;
 }
 
 .card-header img{
@@ -39,4 +74,62 @@ body{
     height: 50px;
     border-radius: 50%;
 }
+
+.card-footer{
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    padding:var(--spacing-lg);
+    background:#1D204D;
+    color:#7578C1;
+    border-radius: 0 0 10px 10px;
+}
+
+.cards.work{
+    background: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(15, 100%, 70%);
+   
+}
+
+.time-container{
+    background-color:#1D204D;
+    height: 90%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 20px 0 20px;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px 0 20px;
+}
+
+.hour-count{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.previous-week{
+    font-size: 15px;
+    color:#7578C1;;
+}
+
+.header,
+.footer{
+    color:var(--font-pcolor);
+}
+
+
 
