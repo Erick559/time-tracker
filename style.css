@@ -34,19 +34,10 @@ body{
     gap:30px;
 }
 
-.cards{
-    width:300px;
-    height:120px;
-}
-
 .cards,
 .card-header,
 .time-container{
     border-radius:10px
-}
-
-.cards:last-child{
-    margin-bottom: 10px;
 }
 
 .cards.main{
@@ -174,5 +165,50 @@ body{
     color:var(--font-pcolor);
 }
 
+ @media screen and (min-width: 768px){
+    .grid-container{
+        width:1000px;
+        grid-template-columns: repeat(4,200px);
+        grid-template-rows: repeat(2, 165px);
+    }
 
+    .cards.main{
+        grid-row: 1/3;
+        height:300px;
+    }
+
+    body{
+        align-items: center;
+        padding:50px;
+    }
+
+    .card-header{
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .text-content{
+        margin-top: 10px;
+    }
+
+    .card-header .user-name{
+        font-size: 25px;
+    }
+
+    .card-footer{
+        display: block;
+    }
+
+    .card-footer p{
+        margin-top: 10px;
+    }
+
+    .hour-count{
+        font-size: 40px;
+    }
+
+    .footer{
+        display: block;
+    }
+}
 
