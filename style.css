@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --primar-bg-color:hsl(226, 43%, 10%);
+    --font-pcolor:hsl(0, 0%, 100%);
+    --font-scolor:hsl(235, 45%, 61%);
+    
+    --spacing-sm: 5px;
+    --spacing-m: calc(var(--spacing-sm)*2);
+    --spacing-lg: calc(var(--spacing-sm)*3);
+    --spacing-xl: calc(var(--spacing-sm)*4);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Rubik", "Helvetica Neue",sans-serif;
+    font-size: 18px;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    padding:var(--spacing-xl);
+}
+
+.cards{
+    width:300px;
+    height:200px;
+    padding:var(--spacing-m);
+}
+
+.card-header img{
+    border:2px solid black;
+    width:50px;
+    height: 50px;
+}
+
