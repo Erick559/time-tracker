@@ -45,6 +45,10 @@ body{
     border-radius:10px
 }
 
+.cards:last-child{
+    margin-bottom: 10px;
+}
+
 .cards.main{
     height:150px;
     background:#1D204D;
@@ -91,7 +95,46 @@ body{
     background-position: right 2% top 0%;
     background-size: 60px 60px;
     background-color: hsl(15, 100%, 70%);
-   
+}
+
+.cards.play{
+    background: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(195, 74%, 62%);
+}
+
+.cards.study{
+    background: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(348, 100%, 68%);     
+}
+
+.cards.exercise{
+    background: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(145, 58%, 55%);    
+}
+
+.cards.social{
+    background: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(264, 64%, 52%);  
+}
+
+.cards.self-care{
+    background: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right 2% top 0%;
+    background-size: 60px 60px;
+    background-color: hsl(43, 84%, 65%);    
 }
 
 .time-container{
