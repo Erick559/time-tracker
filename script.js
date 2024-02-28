@@ -38,6 +38,12 @@ fetch('./data.json')
             }
         }
 
+        for (let i = 0; i < hourCount.length; i++){
+            if(data[i]){
+                hourCount[i].textContent = data[i].timeframes.daily.current;
+            }
+        }
+
         dailyHours.addEventListener('click', () =>{
             for (let i = 0; i < hourCount.length; i++){
                 if(data[i]){
