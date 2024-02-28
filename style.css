@@ -186,7 +186,6 @@ i{
 .card-footer p:hover,
 .card-footer p:active{
     color:#ffff;
-    width:50px;
 }
 
  @media screen and (min-width: 768px){
@@ -230,6 +229,10 @@ i{
 
     .footer{
         display: block;
+    }
+
+    .card-footer p:hover{
+        width:50px;
     }
 }
 
