@@ -41,6 +41,7 @@ fetch('./data.json')
         for (let i = 0; i < hourCount.length; i++){
             if(data[i]){
                 hourCount[i].textContent = data[i].timeframes.daily.current;
+                prevHourCount[i].textContent = `Yesterday - ${data[i].timeframes.daily.previous}`;
             }
         }
 
@@ -48,6 +49,7 @@ fetch('./data.json')
             for (let i = 0; i < hourCount.length; i++){
                 if(data[i]){
                     hourCount[i].textContent = data[i].timeframes.daily.current;
+                    prevHourCount[i].textContent = `Yesterday - ${data[i].timeframes.daily.previous}`;
                 }
             }
         })
@@ -56,6 +58,7 @@ fetch('./data.json')
             for (let i = 0; i < hourCount.length; i++){
                 if(data[i]){
                     hourCount[i].textContent = data[i].timeframes.weekly.current;
+                    prevHourCount[i].textContent = `Last Week - ${data[i].timeframes.weekly.previous}`;
                 }
             }
         })
@@ -64,6 +67,7 @@ fetch('./data.json')
             for (let i = 0; i < hourCount.length; i++){
                 if(data[i]){
                     hourCount[i].textContent = data[i].timeframes.monthly.current;
+                    prevHourCount[i].textContent = `Last Month - ${data[i].timeframes.monthly.previous}`;
                 }
             }
         })
